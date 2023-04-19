@@ -9,7 +9,15 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
+    const arr = [0, 1]
+
+    for (let index = 2; index < n; index++) {
+        const a = arr[index - 1]
+        const b = arr[index - 2]
+        arr.push(a + b)
+    }
+    
+    return arr[n-1]
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

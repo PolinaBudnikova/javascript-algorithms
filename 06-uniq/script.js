@@ -8,7 +8,7 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
+    return arr.reduce((newArr, el) => newArr.includes(el) ? newArr : [...newArr, el], [])
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
